@@ -1,5 +1,9 @@
 name: hola-mundo
-on: push
+on: 
+  push:
+    branches:
+      - main
+      - 'releases/**'
 jobs:
   my-job-sp:
     runs-on: self-hosted
