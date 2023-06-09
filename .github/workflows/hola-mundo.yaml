@@ -1,7 +1,7 @@
 name: hola-mundo
 on: push
 jobs:
-  my-job:
+  my-job-sp:
     runs-on: self-hosted
     steps:
       - name: my-step
@@ -10,7 +10,7 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-  otro-job:
+  otro-job-sp:
     runs-on: self-hosted
     steps:
       - name: my-paso
