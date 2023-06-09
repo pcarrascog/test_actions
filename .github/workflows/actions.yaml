@@ -5,5 +5,8 @@ jobs:
     runs-on:   self-hosted
     steps:
       - name: my-step
-        run: echo "Hello World!"
-             echo "🍏 This job's status is ${{ job.status }}."
+        run: echo "Hello World! 🍏 This job's status is ${{ job.status }}."
+      - name: Lista de directorios
+        run: |
+          ls ${{ github.workspace }}
+      - run: echo "🍏 This job's status is ${{ job.status }}."
