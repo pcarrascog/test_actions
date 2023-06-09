@@ -6,4 +6,4 @@ jobs:
     steps:
       - name: my-step
         run: echo "Hello World!"
-        run: echo "🍏 This job's status is ${{ job.status }}."
+             echo "🍏 This job's status is ${{ job.status }}."
