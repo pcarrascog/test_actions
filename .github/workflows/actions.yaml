@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - dev
-      - 'features/**'
+      - 'feature/**'
 jobs:
   my-job:
     runs-on: self-hosted
