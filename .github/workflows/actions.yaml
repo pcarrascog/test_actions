@@ -16,6 +16,9 @@ jobs:
 
     # steps to perform in job
     steps:
+      - name: Displan branch name
+        run: echo "Deploying to production server on branch $GITHUB_REF"
+        
       - name: Checkout code
         uses: actions/checkout@v3
 
