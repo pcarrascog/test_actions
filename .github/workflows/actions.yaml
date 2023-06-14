@@ -17,6 +17,8 @@ jobs:
   otro-job:
     runs-on: self-hosted
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
       - name: my-paso
         run: echo "Mi Paso"
       - name: List directory
