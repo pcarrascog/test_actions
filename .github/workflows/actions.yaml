@@ -48,7 +48,7 @@ jobs:
           # Note: tags has to be all lower-case
           tags: |
             pcarrascog/test:1
-            pcarrascog/test:2
+            pcarrascog/test:${{ github.ref }}
           # build on feature branches, push only on main branch
           push: ${{ github.ref == 'refs/heads/dev' }}
 
