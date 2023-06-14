@@ -19,7 +19,8 @@ jobs:
     steps:
       - name: my-paso
         run: echo "Mi Paso"
-
+      - name: List directory
+        run: ls -ltr
       - name: Docker Build
         run: docker build -t test .
       # # setup Docker buld action
