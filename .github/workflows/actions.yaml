@@ -22,7 +22,7 @@ jobs:
 
       # setup Docker buld action
       - name: Set up Docker Buildx
-        id: buildx
+        id: dev
         uses: docker/setup-buildx-action@v2
 
       # - name: Checkout code
